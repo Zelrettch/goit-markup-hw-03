@@ -5,9 +5,12 @@
     size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-  .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -161,6 +164,10 @@
 
 /* Main block styles */
 
+.content {
+    flex-grow: 1;
+}
+
 /* Title section */
 
 .title.section {
@@ -179,6 +186,7 @@
     color: currentColor;
     cursor: pointer;
     margin: auto;
+    min-width: 169px;
     border: 0;
     border-radius: 4px;
     padding: 16px 32px;
