@@ -7,6 +7,10 @@
     letter-spacing: 0.02em;
 }
 
+.logo {
+    display: block;
+}
+
 .link {
     text-decoration: none;    
     color: currentColor;
@@ -18,7 +22,33 @@
 
 .list {
     list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
+
+.page-header, .element-header, .section-header, .paragraph {
+    margin: 0;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+.container {
+    width: 1158px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.button {
+    display: block;
+}
+
+.picture {
+    display: block;
+}
+
+/* FONTS*/
 
 /* Logo font */
 .logo {
@@ -66,10 +96,27 @@
     letter-spacing: 0.04em;
 }
 
+
 /* Header styles */
+
+.header .element {
+    padding: 24px 0;
+}
 
 .header .logo .accent {
     color: #2E2F42
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .navigation,
+.header .list{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .header .list .link:hover,
@@ -80,33 +127,55 @@
 .navigation {
     font-weight: 500;
     color: #2E2F42;
+    gap: 76px;
 }
 
+
 /* Main block styles */
-.title-section {
+
+/* Title section */
+
+.title.section {
+    padding: 188px 0;
+}
+
+.title.section {
     background-color: #2E2F42;
     color: #ffffff
 }
 
-.title-section .button {
+.page-header {
+    margin-bottom: 48px;
+}
+
+.title.section .button {
     background-color: #4D5AE5;
     color: currentColor;
     cursor: pointer;
+    margin: auto;
+    border: 0;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
-.title-section .button:hover,
-.title-section .button:focus {
+.title.section .button:hover,
+.title.section .button:focus {
     background-color: #404BBF;
 }
 
-.team-section {
+/* Advantages section */
+
+/* Team section */
+.team.section {
     background-color: #F4F4FD;
 }
 
-.team-section .element {
+.team.section .element {
     background-color: #ffffff;
     text-align: center;
 }
+
+/* Portfolio section */
 
 /* Footer styles */
 .footer {
